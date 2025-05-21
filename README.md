@@ -1,5 +1,5 @@
 
-A modern, Apple-inspired website for smart city solutions.
+A modern,website for smart city solutions.
 
 ## Setup Instructions
 
