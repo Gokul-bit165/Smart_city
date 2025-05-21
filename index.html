@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nagar Thiran - Smart City Solutions</title>
+    <title>Smart City Solutions</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -13,26 +13,26 @@
         <div class="nav-content">
             <a href="#" class="logo">Smart Tender</a>
             <ul class="nav-links">
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#overview-section">Overview</a></li>
+                <li><a href="#features-section">Features</a></li>
+                <li><a href="#solutions-section">Solutions</a></li>
+                <li><a href="#contact-section">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="overview-section">
         <div class="hero-content">
-            <h1>Nagar Thiran</h1>
+            <h1>Smart City</h1>
             <h2>Smart City Solutions</h2>
             <p>Transforming urban living through intelligent technology</p>
-            <a href="#learn-more" class="cta-button">Get Started</a>
+            <a href="analysis.html" class="cta-button">Get Started</a>
         </div>
     </section>
 
     <!-- Features Grid -->
-    <section class="features-grid">
+    <section class="features-grid" id="features-section">
         <div class="feature-card">
             <i class="fas fa-traffic-light"></i>
             <h3>Smart Traffic Management</h3>
@@ -51,7 +51,7 @@
     </section>
 
     <!-- Solutions Section -->
-    <section class="solutions">
+    <section class="solutions" id="solutions-section">
         <div class="solution-content">
             <h2 style="color: white;">Comprehensive Solutions</h2>
             <p style="color: white;">Integrated systems for modern urban challenges</p>
@@ -73,7 +73,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="contact" id="contact-section">
         <div class="contact-content">
             <h2>Get in Touch</h2>
             <p>Ready to transform your city?</p>
@@ -85,7 +85,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Smart Tender</h4>
+                
                 <p>Smart City Solutions</p>
             </div>
             <div class="footer-section">
@@ -107,7 +107,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Smart Tender. All rights reserved.</p>
+            <p>&copy;  All rights reserved.</p>
         </div>
     </footer>
 
@@ -120,7 +120,7 @@
         </div>
         <div class="chatbot-interface" id="chatbot-interface">
             <div class="chatbot-header">
-                <h3>Smart Tender AI Assistant</h3>
+                <h3>Smart City AI Assistant</h3>
                 <button class="close-button" onclick="toggleChat()">
                     <i class="fas fa-times"></i>
                 </button>
@@ -140,6 +140,23 @@
             const chatInterface = document.getElementById('chatbot-interface');
             chatInterface.classList.toggle('active');
         }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#') {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
     </script>
 </body>
 </html> 
