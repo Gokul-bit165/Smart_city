@@ -1,6 +1,5 @@
-# Nagar Thiran - Smart City Solutions
 
-A modern, Apple-inspired website for Nagar Thiran's smart city solutions.
+A modern, Apple-inspired website for smart city solutions.
 
 ## Setup Instructions
 
@@ -41,7 +40,3 @@ To modify the website:
 1. Edit `index.html` for content changes
 2. Edit `styles.css` for styling changes
 3. Replace images in the `images` directory as needed
-
-## License
-
-© 2024 Nagar Thiran. All rights reserved. 
