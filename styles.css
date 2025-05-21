@@ -278,7 +278,7 @@ footer {
 
 .chatbot-interface {
     position: fixed;
-    bottom: 100px;
+    bottom: -30px;
     right: 30px;
     width: 400px;
     height: 600px;
